@@ -5,10 +5,13 @@ using UnityEngine;
 public class Rebound : MonoBehaviour {
 
     public float speed = 20f;
+    public float factor = 1;
 
 	// Use this for initialization
 	void Start () {
-        this.GetComponent<Rigidbody>().velocity = new Vector3(-2, 5, 0);
+        int randomInt = Random.Range(0, 2) * 2 - 1;
+        int randomInt2 = Random.Range(0, 2) * 2 - 1;
+        this.GetComponent<Rigidbody>().velocity = new Vector3(randomInt * 5, randomInt2 * 2, 0);
     }
 	
 	// Update is called once per frame
@@ -17,6 +20,14 @@ public class Rebound : MonoBehaviour {
         {
             this.GetComponent<Rigidbody>().velocity = speed * (this.GetComponent<Rigidbody>().velocity.normalized);
         }
+
+        float dot = Vector3.Dot(GetComponent<Rigidbody>().velocity.normalized, Vector3.up);
+        if (dot > 0.98 || dot < -0.98)
+        {
+            //Vector3 v = Random.insideUnitCircle * factor;
+            //GetComponent<Rigidbody>().velocity += v;
+        }
+
     }
 
     /*void OnCollisionEnter(Collision coll)

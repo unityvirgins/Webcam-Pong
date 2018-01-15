@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
 
     public Text _text;
 
+    public Text _introText;
+
+    public Transform ball;
+    public Transform ball_spawner;
+
 	// Use this for initialization
 	void Start () {
 		UpdateUI();
@@ -18,7 +23,14 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetButtonDown("newBall"))
+        {
+            Instantiate(ball, ball_spawner);
+            if (_introText.IsActive())
+            {
+                _introText.gameObject.SetActive(false);
+            }
+        }
 	}
 
     public void AddPoint(string msg)
@@ -26,10 +38,10 @@ public class GameManager : MonoBehaviour {
         switch (msg)
         {
             case "P1":
-                _p1_score++;
+                _p2_score++;
                 break;
             case "P2":
-                _p2_score++;
+                _p1_score++;
                 break;
 
         }

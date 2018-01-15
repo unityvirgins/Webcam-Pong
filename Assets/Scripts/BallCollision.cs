@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BallCollision : MonoBehaviour {
 
-    public GameObject GM;
+    private GameObject GM;
 
 
 	// Use this for initialization
 	void Start () {
-		
+        GM = GameObject.Find("Game Manager");
 	}
 	
 	// Update is called once per frame
@@ -30,5 +30,7 @@ public class BallCollision : MonoBehaviour {
                 GM.GetComponent<GameManager>().AddPoint("P2");
                 break;
         }
+
+        Destroy(this.gameObject);
     }
 }

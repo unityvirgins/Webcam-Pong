@@ -27,10 +27,15 @@ public class ImagesScript : MonoBehaviour
     double prevArea2 = 0;
 
     Texture2D _textureFrame;
-    public UnityEngine.UI.RawImage _rawImage; 
+    public UnityEngine.UI.RawImage _rawImage;
+
+
+    public int distance_from_center;
+
 
     public int[] hsvMinMax_color1 = { 0, 179, 0, 255, 0, 255 }; //Rouge
     public int[] hsvMinMax_color2 = { 0, 179, 0, 255, 0, 255 }; //Bleu
+
 
     
     // Objet permettant la capture d'un flux video
@@ -49,8 +54,7 @@ public class ImagesScript : MonoBehaviour
         _image = new Mat();
         _imageHsv = new Mat();
 
-        _textureFrame = new Texture2D(600, 600);
-
+        _textureFrame = new Texture2D(800, 600);
     }
 
     void Update()
@@ -103,9 +107,9 @@ public class ImagesScript : MonoBehaviour
                     //Deplacer les joueuer en fonction du centroid 
                     //target.transform.position = new Vector3(-(centroid.X - 320f) / 32f, -(centroid.Y - 240f) / 24f, 0);
                     //if(biggestContourArea > 1000)
-                        target.transform.position = new Vector3(-6,  - (centroid.Y - 240f) / 24f, 0);
+                        target.transform.position = new Vector3(-distance_from_center,  - (centroid.Y - 240f) / 24f, 0);
                     //if (biggestContourArea2 > 1000)
-                        target2.transform.position = new Vector3(6, -(centroid2.Y - 240f) / 24f, 0);
+                        target2.transform.position = new Vector3(distance_from_center, -(centroid2.Y - 240f) / 24f, 0);
 
                     float ellAngle = 0f;
                     float ellAngle2 = 0f;
@@ -122,7 +126,7 @@ public class ImagesScript : MonoBehaviour
                     //launchObject(biggestContourArea2, centroid2, ref prevArea2);
 
                     //Afficher les retours. 
-                    CvInvoke.Imshow("Mon image", _image);
+                    //CvInvoke.Imshow("Mon image", _image);
                     //CvInvoke.Imshow("Mon image HSV", _imageHsv);
                     //CvInvoke.Imshow("Mon image HSV avec erosion 1", imgGray);
                     //CvInvoke.Imshow("Mon image HSV avec erosion 2", imgGray2);

@@ -91,6 +91,117 @@
     <Reference Include="ZedGraph.resources">
       <HintPath>Assets/dll/ZedGraph.resources.dll</HintPath>
     </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>Assets/dll/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>Assets/dll/Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <HintPath>Assets/dll/System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>Assets/dll/System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <HintPath>Assets/dll/System.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <HintPath>Assets/dll/System.Web.DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>Assets/dll/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>Assets/dll/System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <HintPath>Assets/dll/System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>Assets/dll/System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <HintPath>Assets/dll/System.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>Assets/dll/System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <HintPath>Assets/dll/System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="Accessibility">
+      <HintPath>Assets/dll/Accessibility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>Assets/dll/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <HintPath>Assets/dll/System.Web.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <HintPath>Assets/dll/System.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>Assets/dll/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>Assets/dll/System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <HintPath>Assets/dll/System.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <HintPath>Assets/dll/System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <HintPath>Assets/dll/System.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Messaging">
+      <HintPath>Assets/dll/Mono.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>Assets/dll/Mono.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>Assets/dll/System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>Assets/dll/System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>Assets/dll/System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Web">
+      <HintPath>Assets/dll/Mono.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>Assets/dll/System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <HintPath>Assets/dll/System.Web.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Selectors">
+      <HintPath>Assets/dll/System.IdentityModel.Selectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>Assets/dll/System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets/dll/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>Assets/dll/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Novell.Directory.Ldap">
+      <HintPath>Assets/dll/Novell.Directory.Ldap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>Assets/dll/System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets/dll/System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallCollision.cs" />
