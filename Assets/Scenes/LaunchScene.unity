@@ -1239,8 +1239,8 @@ MonoBehaviour:
   shot: {fileID: 1035974900633534, guid: 2291ac09b5ef2e142bc669710b204adc, type: 2}
   _rawImage: {fileID: 676154593}
   distance_from_center: 9
-  hsvMinMax_color1: 4b0000005a00000064000000c80000000000000096000000
-  hsvMinMax_color2: 6e0000008200000064000000ff00000064000000ff000000
+  hsvMinMax_color1: 4b0000005a00000064000000ff00000032000000ff000000
+  hsvMinMax_color2: 640000007800000064000000ff00000064000000ff000000
 --- !u!114 &1761632253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,6 +1478,56 @@ Prefab:
       propertyPath: _introText
       value: 
       objectReference: {fileID: 1332297030}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[2]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[4]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color2.Array.data[2]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color2.Array.data[4]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[0]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[5]
+      value: 255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[3]
+      value: 255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color1.Array.data[1]
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color2.Array.data[1]
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496085389765488, guid: 8b45eb70223629c45ad349efd013ca5b,
+        type: 2}
+      propertyPath: hsvMinMax_color2.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 8b45eb70223629c45ad349efd013ca5b, type: 2}

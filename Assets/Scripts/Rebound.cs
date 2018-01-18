@@ -22,10 +22,18 @@ public class Rebound : MonoBehaviour {
         }
 
         float dot = Vector3.Dot(GetComponent<Rigidbody>().velocity.normalized, Vector3.up);
-        if (dot > 0.98 || dot < -0.98)
+        if (dot > 0.99f || dot < -0.99f)
         {
             //Vector3 v = Random.insideUnitCircle * factor;
             //GetComponent<Rigidbody>().velocity += v;
+            if(GetComponent<Rigidbody>().velocity.x < 0)
+            {
+                GetComponent<Rigidbody>().velocity -= new Vector3(2.0f, 0, 0);
+            } else
+            {
+                GetComponent<Rigidbody>().velocity += new Vector3(2.0f, 0, 0);
+            }
+            
         }
 
     }

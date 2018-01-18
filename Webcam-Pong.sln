@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webcam-Pong", "Webcam-Pong.csproj", "{23EF11C3-6F17-7E78-4DD0-5EE6B68603C7}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webcam-Pong", "Assembly-CSharp.csproj", "{C86388DE-EEBE-1529-C605-D76912292B59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23EF11C3-6F17-7E78-4DD0-5EE6B68603C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23EF11C3-6F17-7E78-4DD0-5EE6B68603C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23EF11C3-6F17-7E78-4DD0-5EE6B68603C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23EF11C3-6F17-7E78-4DD0-5EE6B68603C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86388DE-EEBE-1529-C605-D76912292B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86388DE-EEBE-1529-C605-D76912292B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86388DE-EEBE-1529-C605-D76912292B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86388DE-EEBE-1529-C605-D76912292B59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

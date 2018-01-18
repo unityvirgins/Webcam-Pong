@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A5D1806D-2B8E-BE3A-CD26-379C7A2AB958}</ProjectGuid>
+    <ProjectGuid>{C86388DE-EEBE-1529-C605-D76912292B59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -51,8 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BallCollision.cs" />
      <Compile Include="Assets\Scripts\CamScript.cs" />
      <Compile Include="Assets\Scripts\EmptyScript.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\HaarScript.cs" />
      <Compile Include="Assets\Scripts\ImagesScript.cs" />
      <Compile Include="Assets\Scripts\Rebound.cs" />
@@ -85,20 +87,131 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+ <Reference Include="Accessibility">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Accessibility.dll</HintPath>
+ </Reference>
  <Reference Include="Emgu.CV.UI">
- <HintPath>D:/Projects/Unity/Interfaces/InterfaceProject/Interface Project/Assets/dll/Emgu.CV.UI.dll</HintPath>
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Emgu.CV.UI.dll</HintPath>
  </Reference>
  <Reference Include="Emgu.CV.World">
- <HintPath>D:/Projects/Unity/Interfaces/InterfaceProject/Interface Project/Assets/dll/Emgu.CV.World.dll</HintPath>
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Emgu.CV.World.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Messaging">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Mono.Messaging.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Posix">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Mono.Posix.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Web">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Mono.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.WebBrowser">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Mono.WebBrowser.dll</HintPath>
+ </Reference>
+ <Reference Include="Novell.Directory.Ldap">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/Novell.Directory.Ldap.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.DataAnnotations">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.ComponentModel.DataAnnotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Configuration">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Configuration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Configuration.Install">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Configuration.Install.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.DataSetExtensions">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Data.DataSetExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Linq">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Data.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.OracleClient">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Data.OracleClient.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Design">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Design.dll</HintPath>
+ </Reference>
+ <Reference Include="System.DirectoryServices">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.DirectoryServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Design">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Drawing.Design.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>D:/Projects/Unity/Interfaces/InterfaceProject/Interface Project/Assets/dll/System.Drawing.dll</HintPath>
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.EnterpriseServices">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.EnterpriseServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IdentityModel">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.IdentityModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IdentityModel.Selectors">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.IdentityModel.Selectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Management">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Management.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Messaging">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Messaging.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Remoting">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Runtime.Remoting.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.ServiceModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Web">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.ServiceModel.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceProcess">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.ServiceProcess.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Transactions">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Transactions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Abstractions">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Abstractions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.DynamicData">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.DynamicData.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Extensions.Design">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Extensions.Design.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Extensions">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Mvc">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Mvc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Routing">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Routing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web.Services">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Web.Services.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows.Forms">
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/System.Windows.Forms.dll</HintPath>
  </Reference>
  <Reference Include="ZedGraph">
- <HintPath>D:/Projects/Unity/Interfaces/InterfaceProject/Interface Project/Assets/dll/ZedGraph.dll</HintPath>
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/ZedGraph.dll</HintPath>
  </Reference>
  <Reference Include="ZedGraph.resources">
- <HintPath>D:/Projects/Unity/Interfaces/InterfaceProject/Interface Project/Assets/dll/ZedGraph.resources.dll</HintPath>
+ <HintPath>D:/Projects/Unity/WebcamPong/Webcam-Pong/Assets/dll/ZedGraph.resources.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

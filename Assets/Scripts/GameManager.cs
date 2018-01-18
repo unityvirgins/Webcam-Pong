@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour {
     public Transform ball;
     public Transform ball_spawner;
 
+    bool multiball = false;
+
 	// Use this for initialization
 	void Start () {
 		UpdateUI();
@@ -29,6 +31,9 @@ public class GameManager : MonoBehaviour {
             if (_introText.IsActive())
             {
                 _introText.gameObject.SetActive(false);
+            } else
+            {
+                multiball = true;
             }
         }
 	}
@@ -39,9 +44,17 @@ public class GameManager : MonoBehaviour {
         {
             case "P1":
                 _p2_score++;
+                if (!multiball)
+                {
+                    Instantiate(ball, ball_spawner);
+                }
                 break;
             case "P2":
                 _p1_score++;
+                if (!multiball)
+                {
+                    Instantiate(ball, ball_spawner);
+                }
                 break;
 
         }
